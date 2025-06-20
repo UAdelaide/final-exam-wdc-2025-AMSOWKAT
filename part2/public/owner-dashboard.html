@@ -24,7 +24,7 @@
             <label class="form-label">Select Your Dog</label>
             <select v-model="form.dog_id" class="form-control" required>
               <option disabled value="">-- Choose a dog --</option>
-              <op
+              <option v-for="dog in dogs" :key
             </select>
           </div>
           <div class="mb-3">
