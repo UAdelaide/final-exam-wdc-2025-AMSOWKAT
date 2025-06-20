@@ -83,7 +83,8 @@ let db;
       `);
     }
 
-    Console.log('Test data is inputed into the database')''
+    Console.log('Test data is inputed into the database');
+    }catch
 
 })();
 
