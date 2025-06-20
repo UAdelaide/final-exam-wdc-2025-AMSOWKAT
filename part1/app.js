@@ -36,6 +36,7 @@ let db;
       password: '',
       database: 'DogWalkService'
     });
+    }
 
 })();
 
