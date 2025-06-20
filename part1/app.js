@@ -95,7 +95,10 @@ let db;
 // api/dogs route
 
 app.get ('/api/dogs', async (req, res) => {
-    
+
+    try {
+        
+    }
 }
 
 app.use('/', indexRouter);
