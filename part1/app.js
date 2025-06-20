@@ -26,7 +26,7 @@ let db;
       user: 'root',
       password: ''
     });
-    
+
     await conn.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
     await conn.end();
 
@@ -38,6 +38,18 @@ let db;
       database: 'DogWalkService'
     });
 
+    //if the table is empty
+    const [uc] = await db.execute('SELECT COUNT(*) AS cnt FROM Users');
+    if (uc[0].cnt === 0) {
+      await db.execute(`
+        INSERT INTO Users (username,email,password_hash,role) VALUES
+        ('alice123','alice@example.com','hashed123','owner'),
+        ('bobwalker','bob@example.com','hashed456','walker'),
+        ('carol123','carol@example.com','hashed789','owner'),
+        ('davidwalker','david@example.com','hashed999','walker'),
+        ('emilyowner','emily@example.com','hashed000','owner')
+      `);
+    }
 
 })();
 
