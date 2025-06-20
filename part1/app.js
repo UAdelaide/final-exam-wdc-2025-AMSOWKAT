@@ -92,7 +92,9 @@ let db;
 
 // Routes
 
-///api/dogs route
+// api/dogs route
+
+app.get
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
