@@ -20,5 +20,6 @@ a {
 }
 
 @keyframes Pulse{
-  0
+  0% { background: magenta;}
+  50%
 }
