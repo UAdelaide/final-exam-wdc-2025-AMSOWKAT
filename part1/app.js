@@ -33,7 +33,7 @@ let db;
     await conn.end();
 
 
-    //connect to the db
+    // connect to the db
      db = await mysql.createConnection({
       host: 'localhost',
       user: 'root',
@@ -42,7 +42,7 @@ let db;
     });
 
 
-    //if the table is empty
+    // if the table is empty
     const [uc] = await db.execute('SELECT COUNT(*) AS cnt FROM Users');
     if (uc[0].cnt === 0)
         {
@@ -56,7 +56,7 @@ let db;
       `);
     }
 
-    //if dog table is empty
+    // if dog table is empty
     const [dc] = await db.execute('SELECT COUNT(*) AS cnt FROM Dogs');
     if (dc[0].cnt === 0) {
       await db.execute(`
@@ -69,7 +69,7 @@ let db;
       `);
     }
 
-    //if the walkrquest is empty
+    // if the walkrquest is empty
     const [wc] = await db.execute('SELECT COUNT(*) AS cnt FROM WalkRequests');
     if (wc[0].cnt === 0)
     {
