@@ -83,7 +83,7 @@ let db;
       `);
     }
 
-    Console.log()
+    Console.log('Test data is inputed into the ')
 
 })();
 
