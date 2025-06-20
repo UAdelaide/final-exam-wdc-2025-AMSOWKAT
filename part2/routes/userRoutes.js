@@ -70,7 +70,7 @@ router.post('/logout', (req, res) => {
 router.get ('/dogs', async (req, res) => {
   try {
     const [dogs] = await db.query(`
-      SE
+      SELECT dog_id
       `)
   }
 
