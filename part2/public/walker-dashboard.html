@@ -52,7 +52,7 @@
         async function getCurrentUser() {
           try {
             const res = await fetch ('/api/users/me');
-            if (!!res.ok) throw new Error('Not logged in');
+            if (!res.ok) throw new Error('Not logged in');
             const u = await res.json();
             currentUser.value = u.user_id;
           } catch (err){
