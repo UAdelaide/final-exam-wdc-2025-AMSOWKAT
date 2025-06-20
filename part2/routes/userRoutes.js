@@ -66,6 +66,6 @@ router.post('/logout', (req, res) => {
   });
 });
 
-
+// Get all 
 
 module.exports = router;
