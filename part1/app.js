@@ -70,7 +70,10 @@ let db;
 
     //if the walkrquest is empty
     const [wc] = await db.execute('SELECT COUNT(*) AS cnt FROM WalkRequests');
-    if(W)
+    if (wc[0].cnt === 0)
+    {
+        await db.
+    }
 
 })();
 
