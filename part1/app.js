@@ -130,6 +130,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
     }
 });
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
