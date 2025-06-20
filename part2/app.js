@@ -9,8 +9,8 @@ const app = express();
 app.use(session({
     secret: process.env.SESSION_SECRET || 'secret',
     resave: false,
-    saveUninitialized
-}))
+    saveUninitialized: false
+}));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
