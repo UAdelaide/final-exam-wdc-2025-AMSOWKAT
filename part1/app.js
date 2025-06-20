@@ -90,7 +90,7 @@ let db;
 
 })();
 
-//
+// Routes
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
