@@ -110,6 +110,7 @@ app.get('/api/dogs', async (req, res) => {
 
 
 // api/walkrequests/open
+app.get
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
