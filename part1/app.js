@@ -131,7 +131,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
 });
 
 // api/walkers/summary
-app.get
+app.get('/api/walkers/summary', async (req, res) => {
+    try
+}
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
