@@ -4,4 +4,5 @@ const db = require('../models/db');
 
 // Get list of dog_id, name for the owner
 
-Ro
+router.get('/', async (req, res) => {
+    
