@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 let db;
 (async () => {
 
-    
+
     try {
     //Create the database if it doesn't exist
     const conn = await mysql.createConnection({
@@ -54,6 +54,8 @@ let db;
         ('emilyowner','emily@example.com','hashed000','owner')
       `);
     }
+
+    //
 
 })();
 
