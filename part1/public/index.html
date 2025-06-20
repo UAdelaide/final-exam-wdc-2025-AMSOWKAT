@@ -18,7 +18,7 @@
         </h1>
 
         <button type="button" @click="fetchDog()"> Refresh Dog picture</button>
-        <img class="draggable" draggable="true" :src="dogImage" alt="Dog of the day" />
+        <img class="draggable" draggable="true" :src="dogImage" src="" alt="Dog of the day" />
         <div @scroll="onScroll" style="height:100px; overflow-y:scroll; border:2px solid red; margin-top:20px;">
         <p v-for="n in 20" :key="n">Line {{ n }}</p>
         </div>
