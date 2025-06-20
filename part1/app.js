@@ -6,6 +6,7 @@ const mysql = require('mysql2/promise');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const { Console } = require('console');
 
 var app = express();
 
@@ -81,6 +82,8 @@ let db;
         ((SELECT dog_id FROM Dogs WHERE name='Luna'),'2025-06-12 15:30:00',40,'Greenway Path','cancelled')
       `);
     }
+
+    Console.log()
 
 })();
 
