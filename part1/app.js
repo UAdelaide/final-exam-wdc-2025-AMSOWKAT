@@ -132,7 +132,10 @@ app.get('/api/walkrequests/open', async (req, res) => {
 
 // api/walkers/summary
 app.get('/api/walkers/summary', async (req, res) => {
-    try
+    try{
+
+        const [rows]
+    }
 }
 
 app.use('/', indexRouter);
