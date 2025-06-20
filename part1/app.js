@@ -126,6 +126,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
     `);
     res.json(rows);
         }
+    catch 
 }
 
 app.use('/', indexRouter);
