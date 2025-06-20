@@ -9,5 +9,10 @@ router.get('/', async (req, res) => {
     if (!ownerId) return res.status(401).json({ error: 'Not logged in' });
 
     try {
-        const [dogs] = await db.query
+        const [dogs] = await db.query(
+            `SELECT dog_id, name
+            FROM Dogs
+            WHERE owner_id = ?`,
+            [ownerId]
+        )
     }
