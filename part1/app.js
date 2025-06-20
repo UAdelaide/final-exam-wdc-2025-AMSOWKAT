@@ -26,6 +26,7 @@ let db;
       user: 'root',
       password: ''
     });
+    await conn.query
 
 })();
 
