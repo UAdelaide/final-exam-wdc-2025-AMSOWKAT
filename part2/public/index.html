@@ -55,11 +55,12 @@
           // if succesfull, redirect
           if (payload.user.role === 'owner') {
             window.location = 'owner-dashboard.html';
-+          } else {window.location = 'walker-dashboard.html';
-+          }} else {
-+          alert(payload.error);
-+        }
-+      })
+          } else {window.location = 'walker-dashboard.html';
+          }} else {
+          alert(payload.error);
+        }
+      })
+      .catch
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
