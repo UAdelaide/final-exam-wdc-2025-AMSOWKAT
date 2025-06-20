@@ -128,7 +128,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
         }
     catch (err)
     {
-        res.status(500).json({ error: 'Failed to retrive '})
+        res.status(500).json({ error: 'Failed to retrive requests'});
     }
 }
 
