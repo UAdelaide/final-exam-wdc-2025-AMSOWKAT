@@ -94,7 +94,7 @@ let db;
 
 // api/dogs route
 
-app.get ('/api/dogs', async (req, res) => {
+app.get('/api/dogs', async (req, res) => {
 
     try {
      const [rows] = await db.execute(`
@@ -107,6 +107,8 @@ app.get ('/api/dogs', async (req, res) => {
     res.status(500).json({ error: 'Failed to retrieve dogs' });
     }
 });
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
