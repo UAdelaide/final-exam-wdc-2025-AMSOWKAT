@@ -16,5 +16,5 @@ router.get('/', async (req, res) => {
             [ownerId]
         );
         res.json(dogs);
-        } ca
+        } catch (err)
     }
