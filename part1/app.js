@@ -92,6 +92,8 @@ let db;
 
 // Routes
 
+///api/dogs route
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
