@@ -69,7 +69,7 @@ router.post('/logout', (req, res) => {
 // Get all dogs
 router.get ('/dogs', async (req, res) => {
   try {
-    const [dogs] = aw
+    const [dogs] = await db.query()
   }
 
 });
