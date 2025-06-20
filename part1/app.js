@@ -6,7 +6,7 @@ const mysql = require('mysql2/promise');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const { Console } = require('console');
+const { Console, error } = require('console');
 
 var app = express();
 
@@ -128,7 +128,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
         }
     catch (err)
     {
-        res.status(500).json
+        res.status(500).json({ error: ''})
     }
 }
 
