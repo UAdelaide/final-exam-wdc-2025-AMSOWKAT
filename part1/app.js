@@ -68,7 +68,8 @@ let db;
       `);
     }
 
-    //if the walkrq
+    //if the walkrquest is empty
+    const
 
 })();
 
