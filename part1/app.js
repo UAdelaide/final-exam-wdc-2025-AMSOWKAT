@@ -131,6 +131,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
         res.status(500).json({ error: 'Failed to retrive requests'});
     }
 }
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
