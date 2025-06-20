@@ -66,6 +66,7 @@ router.post('/logout', (req, res) => {
   });
 });
 
-// Get all 
+// Get all dogs - from 
+
 
 module.exports = router;
