@@ -19,7 +19,7 @@ a {
   animation: pluse 1s infinite;
 }
 
-@keyframes Pulse{
+@keyframes pulse{
   0% { background: magenta;}
   50% { background-color: cyan;}
   100% { background-color: magenta;}
