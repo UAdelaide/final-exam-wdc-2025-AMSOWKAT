@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(session({
+app.use(session({                                         // add middle
     secret: process.env.SESSION_SECRET || 'secret',
     resave: false,
     saveUninitialized: false
