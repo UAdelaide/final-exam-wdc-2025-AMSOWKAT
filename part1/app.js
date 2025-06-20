@@ -152,7 +152,7 @@ app.get('/api/walkers/summary', async (req, res) => {
     `);
     res.json(rows);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to retrive walker data' });
+    res.status(500).json({ error: 'Failed to retrieve walker data' });
   }
 });
 
