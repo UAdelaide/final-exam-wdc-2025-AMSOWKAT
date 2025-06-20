@@ -72,7 +72,7 @@ let db;
     const [wc] = await db.execute('SELECT COUNT(*) AS cnt FROM WalkRequests');
     if (wc[0].cnt === 0)
     {
-        await db.execute
+        await db.execute()
     }
 
 })();
