@@ -74,6 +74,8 @@ router.get ('/dogs', async (req, res) => {
         FROM Dogs
       `);
       res.json(dogs);
+  } catch (err) {
+    
   }
 
 });
