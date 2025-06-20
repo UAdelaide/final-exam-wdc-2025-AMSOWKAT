@@ -68,6 +68,8 @@ let db;
       `);
     }
 
+    //if the walkrq
+
 })();
 
 app.use('/', indexRouter);
