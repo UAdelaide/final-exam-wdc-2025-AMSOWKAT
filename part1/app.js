@@ -16,14 +16,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//share the database
-
+// share the database
 let db;
 (async () => {
 
 
     try {
-    //Create the database if it doesn't exist
+    // Create the database if it doesn't exist
     const conn = await mysql.createConnection({
       host: 'localhost',
       user: 'root',
