@@ -14,5 +14,6 @@ router.get('/', async (req, res) => {
             FROM Dogs
             WHERE owner_id = ?`,
             [ownerId]
-        )
+        );
+        res.json(dogs);
     }
