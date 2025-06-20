@@ -26,6 +26,7 @@ let db;
       user: 'root',
       password: ''
     });
+    
     await conn.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
     await conn.end();
 
@@ -36,7 +37,7 @@ let db;
       password: '',
       database: 'DogWalkService'
     });
-    }
+
 
 })();
 
