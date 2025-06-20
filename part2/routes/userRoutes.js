@@ -37,7 +37,7 @@ router.get('/me', (req, res) => {
 
 // POST login
 router.post('/login', async (req, res) => {
-  const { username, password } = req.body; // rename here
+  const { username, password } = req.body; // rename
 
   try {
     const [rows] = await db.query(`
