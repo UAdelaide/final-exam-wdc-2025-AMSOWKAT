@@ -18,22 +18,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //share the database
 let db;
 (async () => {
+
     try {
     // 1. Create DB if needed
     const conn = await mysql.createConnection({
       host: 'localhost',
       user: 'root',
       password: ''      // your MySQL root password
-    });
-    await conn.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
-    await conn.end();
-
-    // 2. Connect to DogWalkService
-    db = await mysql.createConnection({
-      host: 'localhost',
-      user: 'root',
-      password: '',
-      database: 'DogWalkService'
     });
 
 })();
