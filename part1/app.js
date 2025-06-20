@@ -92,8 +92,8 @@ let db;
 
 // Routes
 
-// api/dogs route
 
+// api/dogs route
 app.get('/api/dogs', async (req, res) => {
 
     try {
@@ -109,6 +109,7 @@ app.get('/api/dogs', async (req, res) => {
 });
 
 
+//
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
