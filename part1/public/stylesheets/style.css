@@ -14,5 +14,6 @@ a {
 .sidebar{
   position: fixed;
   top: 0; left: 0;
-  we
+  width: 200px; height: 100%;
+  background: ;
 }
