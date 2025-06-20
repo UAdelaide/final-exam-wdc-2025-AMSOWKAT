@@ -55,7 +55,9 @@
             if (!!res.ok) throw new Error('Not logged in');
             const u = await res.json();
             currentUser.value = u.user_id;
-          } catch (err)
+          } catch (err){
+            console.error('Failed to get current user', err);
+          }
         }
 
         async function loadWalkRequests() {
