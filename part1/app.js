@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 let db;
 (async () => {
 
+    
     try {
     //Create the database if it doesn't exist
     const conn = await mysql.createConnection({
@@ -30,6 +31,7 @@ let db;
     await conn.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
     await conn.end();
 
+
     //connect to the db
      db = await mysql.createConnection({
       host: 'localhost',
@@ -38,10 +40,12 @@ let db;
       database: 'DogWalkService'
     });
 
+
     //if the table is empty
     const [uc] = await db.execute('SELECT COUNT(*) AS cnt FROM Users');
-    if (uc[0].cnt === 0) {
-      await db.execute(`
+    if (uc[0].cnt === 0)
+        {
+        await db.execute(`
         INSERT INTO Users (username,email,password_hash,role) VALUES
         ('alice123','alice@example.com','hashed123','owner'),
         ('bobwalker','bob@example.com','hashed456','walker'),
