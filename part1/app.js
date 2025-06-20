@@ -55,7 +55,18 @@ let db;
       `);
     }
 
-    //
+    //if dog table is empty
+    const [dc] = await db.execute('SELECT COUNT(*) AS cnt FROM Dogs');
+    if (dc[0].cnt === 0) {
+      await db.execute(`
+        INSERT INTO Dogs (owner_id,name,size) VALUES
+        ((SELECT user_id FROM Users WHERE username='alice123'),'Max','medium'),
+        ((SELECT user_id FROM Users WHERE username='carol123'),'Bella','small'),
+        ((SELECT user_id FROM Users WHERE username='emilyowner'),'Rocky','large'),
+        ((SELECT user_id FROM Users WHERE username='alice123'),'Milo','small'),
+        ((SELECT user_id FROM Users WHERE username='carol123'),'Luna','medium')
+      `);
+    }
 
 })();
 
