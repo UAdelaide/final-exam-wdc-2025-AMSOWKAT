@@ -30,3 +30,7 @@ a {
   height: 200px;
   cursor: move;
 }
+
+marquee {
+  color: red;
+}
