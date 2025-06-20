@@ -47,6 +47,8 @@
         const error = ref('');
         const currentUser = ref(null); // removed the hard coded part
 
+        //
+
         async function loadWalkRequests() {
           try {
             const res = await fetch('/api/walks');
