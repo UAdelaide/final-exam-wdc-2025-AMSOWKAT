@@ -76,7 +76,7 @@ router.get ('/dogs', async (req, res) => {
       res.json(dogs);
   } catch (err) {
     console.error(err);
-    res.status(500).json({})
+    res.status(500).json({ error : 'Fai'})
   }
 
 });
