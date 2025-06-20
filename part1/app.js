@@ -20,11 +20,11 @@ let db;
 (async () => {
 
     try {
-    // 1. Create DB if needed
+    //Create the database if it doesn't exist
     const conn = await mysql.createConnection({
       host: 'localhost',
       user: 'root',
-      password: ''      // your MySQL root password
+      password: ''
     });
 
 })();
