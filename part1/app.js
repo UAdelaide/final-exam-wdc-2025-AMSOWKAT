@@ -28,7 +28,14 @@ let db;
     });
     await conn.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
     await conn.end();
-    
+
+    //connect to the db
+     db = await mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'DogWalkService'
+    });
 
 })();
 
