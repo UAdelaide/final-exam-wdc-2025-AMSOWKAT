@@ -19,7 +19,9 @@
 
         <button type="button" @click="fetchDog()"> Refresh Dog picture</button>
         <img class="draggable" draggable="true" :src="dogImage" />
-        <div></div>
+        <div @scroll="onScroll" style="height:100px; overflow-y:scroll; border:2px solid red; margin-top:20px;">
+        <p v-for="n in 20" :key="n">Line {{ n }}</p>
+        </div>
     </div>
     <h1>Express</h1>
     <p>Welcome to Express</p>
