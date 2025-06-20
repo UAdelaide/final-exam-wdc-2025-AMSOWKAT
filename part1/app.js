@@ -103,8 +103,9 @@ app.get ('/api/dogs', async (req, res) => {
       JOIN Users u ON d.owner_id = u.user_id
     `);
      res.json(rows);
+    }catch (err) {
+    res.status(500).json({ error: 'Failed to retrieve dogs' });
     }
-}
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
