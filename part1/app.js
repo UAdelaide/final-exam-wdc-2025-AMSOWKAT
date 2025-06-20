@@ -84,7 +84,9 @@ let db;
     }
 
     Console.log('Test data is inputed into the database');
-    }catch
+    }catch (err) {
+        console.error
+    }
 
 })();
 
