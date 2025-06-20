@@ -82,10 +82,10 @@ let db;
       `);
     }
 
-    console.log('Test data is inputed into the database');
-    }catch (err) {
-        console.error('Error in the database. Start Mysql', err);
-    }
+    // console.log('Test data is inputed into the database');
+    // }catch (err) {
+    //     console.error('Error in the database. Start Mysql', err);
+    // }
 
 })();
 
