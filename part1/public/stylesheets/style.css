@@ -16,5 +16,7 @@ a {
   top: 0; left: 0;
   width: 200px; height: 100%;
   background: magenta;
-  animation: pluse 1s i;
+  animation: pluse 1s infinite;
 }
+
+@keyframes Pulse
