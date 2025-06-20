@@ -41,10 +41,10 @@
             methods: {
                  fetchDog() {
                     fetch('https://dog.ceo/api/breeds/image/random')
-            .then(r => r.json())
-            .then(d => this.dogImage = d.message)
-            .catch(console.error);
-        },
+                    .then(r => r.json())
+                    .then(d => this.dogImage = d.message)
+                    .catch(console.error);
+                },
 
             /**
              *
