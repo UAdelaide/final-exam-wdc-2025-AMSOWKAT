@@ -104,7 +104,8 @@
                 const { message: photo } = await r.json();
                 return { dog, photo};
               })
-            )
+            );
+            dogs.value = withPhotos
           }
 
         }
