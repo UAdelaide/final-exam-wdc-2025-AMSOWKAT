@@ -97,7 +97,8 @@
         async function loadAllDogs() {
           try{
             const res =await fetch ('/api/users/dogs');
-            const list = await 
+            const list = await res.json();
+            
           }
 
         }
