@@ -98,7 +98,9 @@
           try{
             const res =await fetch ('/api/users/dogs');
             const list = await res.json();
-            const withPhotos = await Promise.all)
+            const withPhotos = await Promise.all(
+              list.map()
+            )
           }
 
         }
