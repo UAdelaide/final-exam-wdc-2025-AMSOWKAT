@@ -102,7 +102,7 @@
               list.map(async dog => {
                 const r = await fetch ('https://dog.ceo/api/breeds/image/random');
                 const { message: photo } = await r.json();
-                return 
+                return {}
               })
             )
           }
